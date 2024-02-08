@@ -1,0 +1,42 @@
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+#form{
+    display: none;
+}
+
+.form{
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+}
+
+.card{
+    border: 1px solid;
+    border-color: rgb(155, 155, 155);
+    padding: 20px;
+    border-radius: 0.4rem;
+}
+
+#container{
+    display: grid;
+    grid-template-columns: 200px 200px 200px 200px 200px 200px 200px;
+    grid-auto-flow: row; /* Arrange items in a column direction */
+    gap: 20px;
+}
+
+.grid-container{
+    display: flex;
+    overflow-x: auto; /* Allow horizontal scrolling if the cards overflow the container */
+    padding: 20px;
+}
+
+.card > button{
+    margin: 5px;
+}
+
